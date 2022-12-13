@@ -1,13 +1,10 @@
 // Write your code here!
-const element = document.createElement("div");
-document.body.append(element);
+let main = document.querySelector('main#main');
+main.remove();
 
-const ul = document.createElement("ul");
+let newHeader = document.createElement("h1")
 
-for (let i = 0; i < 3; i++) {
-  const li = document.createElement("li");
-  li.textContent = (i + 1).toString();
-  ul.append(li);
-}
+newHeader.id = 'victory';
 
-element.append(ul);
+newHeader.innerHTML = "MelvinKukwan is the champion";
+
